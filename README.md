@@ -1,9 +1,9 @@
 # Sakarya-Universitesi-2019-2020-2.Yariyil-Web-Teknolojileri-Projesi
-SAKARYA ÜNİVERSİTESİ
-2019-2020
-BAHAR DÖNEMİ
-WEB TEKNOLOJİLERİ DERSİ
-PROJE ÖDEVİ
+#SAKARYA ÜNİVERSİTESİ
+#2019-2020
+#BAHAR DÖNEMİ
+#WEB TEKNOLOJİLERİ DERSİ
+#PROJE ÖDEVİ
 
 Öğretim Görevlisi: Dr.Öğr.Üyesi GÜLÜZAR ÇİT
 
