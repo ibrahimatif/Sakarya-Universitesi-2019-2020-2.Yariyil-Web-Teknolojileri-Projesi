@@ -7,14 +7,12 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/stilim.css">
 
-        <script src="js/jquery-3.4.1.slim.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+
         
         <title>İbrahim Atıf KURU</title>
     </head>
     <body class="iletisim-arka">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="image/LogoUzum.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 İbrahim Atıf KURU
@@ -26,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="hakkinda.html">Anasayfa</a>
+                        <a class="nav-link" href="index.html">Hakkımda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
@@ -43,47 +41,47 @@
                 </ul>
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Giriş  <img src="image/GirisYapmamis.png" width="30px" alt=""></a>
+                        <a class="nav-link" href="login.html">Giriş  <img src="image/GirisYapmamis.png" width="30px" alt=""></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <form action="">
-            <div class="container iletisim-yazi" id="ortaAlan">
+        <form id="iletisim-form" action="iletisim.php" method="POST">
+            <div class="container iletisim-yazi iletisim-arka-plan" id="">
                 <div class="row">
-                    <div class="col-lg-4 iletisim-div">
+                    <div class="col-md-6 iletisim-div">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <label for="adi">ADINIZ:</label>
                             </div>
-                            <div class="col-lg-8">
-                                <input type="text" name="adi">
+                            <div class="col-md-8">
+                                <input id="adi" type="text" name="adi"> 
                             </div><br>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <label for="adi">SOYADINIZ: </label>
+                            <div class="col-md-4">
+                                <label  for="soyadi">SOYADINIZ: </label>
                             </div>
-                            <div class="col-lg-8">
-                                <input type="text" name="soyadi">
+                            <div class="col-md-8">
+                                <input id="soyadi" type="text" name="soyadi">
                             </div><br>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <label for="adi">CİNSİYET: </label>
+                            <div class="col-md-4">
+                                <label for="cinsiyet">CİNSİYET: </label>
                             </div>
-                            <div class="col-lg-8">
-                                <input type="radio" name="cinsiyet" id="" value="ERKEK">ERKEK
-                                <input type="radio" name="cinsiyet" id="" value="KADIN">KADIN
+                            <div class="col-md-8">
+                                <input type="radio" name="cinsiyet" value="ERKEK">ERKEK
+                                <input type="radio" name="cinsiyet" value="KADIN">KADIN
                             </div><br>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <label for="adi">ŞEHİR : </label>
+                            <div class="col-md-4">
+                                <label for="sehir">ŞEHİR : </label>
                             </div>
-                            <div class="col-lg-8">
-                                <select name="sehir" id="">
-                                    <option value="0">------</option>
+                            <div class="col-md-8">
+                                <select id="sehir" name="sehir" id="">
+                                    <option value="0">Seçiniz</option>
                                     <option value="1">Adana</option>
                                     <option value="2">Adıyaman</option>
                                     <option value="3">Afyonkarahisar</option>
@@ -168,32 +166,31 @@
                                 </select>
                             </div><br>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 iletisim-div">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <label for="adi">E-POSTA: </label>
+                            <div class="col-md-4">
+                                <label for="eposta">E-POSTA: </label>
                             </div>
-                            <div class="col-lg-8">
-                                <input type="email" name="mail" id="">
+                            <div class="col-md-8">
+                                <input id="eposta" type="text" name="eposta">
                             </div><br>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <label for="adi">DÖNÜŞ TİPİ : </label>
+                            <div class="col-md-4">
+                                <label for="donustipi">DÖNÜŞ TİPİ : </label>
                             </div>
-                            <div class="col-lg-8">
-                                <input type="checkbox" name="donustipi" id="" value="sms">SMS<br>
-                                <input type="checkbox" name="donustipi" id="" value="tel">TELEFON<br>
-                                <input type="checkbox" name="donustipi" id="" value="email">EMAİL
+                            <div class="col-md-8">
+                                <input id="sms" type="checkbox" name="donustipi[]" value="SMS">SMS<br>
+                                <input id="telefon" type="checkbox" name="donustipi[]" value="Telefon">TELEFON<br>
+                                <input id="email" type="checkbox" name="donustipi[]" value="E-Posta">EMAİL
                             </div><br>
                         </div>
                     </div>
                     
-                    <div class="col-lg-4 iletisim-div">
+                    <div class="col-md-6 iletisim-div">
                         <label for="ileti">İLETİ:</label> <br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea id=ileti name="ileti" id="" cols="50" rows="20"></textarea> <br>
+                        <button id="gonder" type="submit">GÖNDER</button>
+                        <button type="reset">FORMU TEMİZLE</button>
                     </div>
                 </div>
             </div>
@@ -201,11 +198,11 @@
         <footer class="bg-dark py-5 align-bottom">
             <div class="container text-white">
                 <div class="row">
-                    <div class="col-md-4"><a class="footer-logo" href="hakkinda.html">İbrahim Atıf KURU</a>
+                    <div class="col-md-4"><a class="footer-logo" href="index.html">İbrahim Atıf KURU</a>
                     </div>
                     <div class="col-md-4">
                         <ul >
-                            <li ><a class="footer-text" href="hakkinda.html">Hakkında</a></li>
+                            <li ><a class="footer-text" href="index.html">Hakkımda</a></li>
                             <li ><a class="footer-text" href="ozgecmis.html">Özgeçmiş</a></li>
                             <li ><a class="footer-text" href="sehrim.html">Şehrim</a></li>
                             <li ><a class="footer-text" href="mirasimiz.html">Mirasımız</a></li>
@@ -223,6 +220,9 @@
                 </div>
             </div>
         </footer>
-      </body>
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scriptim.js"></script>
     </body>
 </html>
