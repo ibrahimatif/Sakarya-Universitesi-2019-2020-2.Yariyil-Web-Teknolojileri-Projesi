@@ -11,7 +11,7 @@
         
         <title>İbrahim Atıf KURU</title>
     </head>
-    <body class="sehrim-arka-plan img-fluid" >
+    <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="image/LogoUzum.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="hakkinda.html">Anasayfa</a>
+                        <a class="nav-link" href="index.html">Hakkımda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
@@ -47,33 +47,37 @@
             </div>
         </nav>
         <section>
-            <div id="ortaAlan" class="container">
-                <div id="manisa-slider" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner text-center">
-                        <div class="carousel-item active">
-                            <img src="image/unnamed.jpg" width="900px" height="600px" alt="">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/manisaMuradiyeCamii.jpg" width="900px" height="600px" alt="">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/aigai.jpg" width="900px" height="600px" alt="">
-                        </div>
-                        <div class="carousel-item" >
-                            <img src="image/sardes3.jpg" width="900px" height="600px" alt="">                        
+            <div class="container-fluid sehrim-arka-plan">
+                <div class="row slayt">
+                    <div class="col-lg-12">
+                        <div id="manisa-slider" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <a href="niobe.html"><img src="image/unnamed.jpg" width="900px" height="600px" alt=""></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="tumulus.html"><img src="image/tumulus1.jpg" width="900px" height="600px" alt=""></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="aigai.html"><img src="image/aigai.jpg" width="900px" height="600px" alt=""></a>
+                                </div>
+                                <div class="carousel-item" >
+                                    <a href="sardes.html"><img src="image/sardes3.jpg" width="900px" height="600px" alt=""></a>                        
+                                </div>
+                            </div>
+                            <a href="#manisa-slider" class="carousel-control-prev" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a href="#manisa-slider" class="carousel-control-next" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
                         </div>
                     </div>
-                    <a href="#manisa-slider" class="carousel-control-prev" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a href="#manisa-slider" class="carousel-control-next" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
                 </div>
                 <br>
                 <div class="row">
                     <div  class="col-lg-5 divAlani" id="genelBilgiK" onmouseover ="ac('1')" onmouseout="kapat('1')">
-                        <h1>GENEL BİLGİLER</h1>
+                        <h2>GENEL BİLGİLER</h2>
                         <p class="paragraf" id="yazi1">
                             2019 TÜİK verilerine göre nüfusu 1.440.611 kişi olan Manisa, Türkiye'nin en kalabalık on dördüncü şehridir. Anadolu Yarımadası'nın batısında, Ege Bölgesi'nin ortasında yer alır. 
                             Doğudan Uşak ve Kütahya, Güneyden Aydın ve Denizli, Kuzeyden Balıkesir ve Batıdan İzmir ile komşudur. 
@@ -82,11 +86,8 @@
                             Şehir, Spil Dağının eteklerinde kurulmuştur. Gediz Nehrinin büyük bir bölümü il sınırları içerisinden geçmektedir. 
                         </p>
                     </div>
-                    <div class="col-lg-2">
-
-                    </div>
                     <div class="col-lg-5 divAlani" id="ekonomiK" onmouseover ="ac('2')" onmouseout="kapat('2')">
-                        <h1 id="ekonomiB">EKONOMİMİZ</h1>
+                        <h2 id="ekonomiB">EKONOMİMİZ</h2>
                         <p class="paragraf" id="yazi2">
                             Çağdaş sanayileşmenin tüm gereklerini yerine getiren Manisa Organize Sanayi Bölgesi, hem ülke ekonomisi için hem de yöresel gelişme için istihdamı arttırıcı bir özelliğe sahiptir. 
                             Katma değer yaratması ve yan sanayi olanaklarının gelişmesine paralel olarak ciddi bir ekonomik faaliyet kaynağı olması sebebiyle yatırımcıların gözde yatırım noktası haline gelmiştir. 
@@ -95,10 +96,10 @@
                         </p>
                     </div>
                 </div>
-                <br>
+                
                 <div class="row">
                     <div class="col-lg-5 divAlani" id="cografyaK" onmouseover ="ac('3')" onmouseout="kapat('3')">
-                        <h1 id="cografyaB">COĞRAFYAMIZ</h1>
+                        <h2 id="cografyaB">COĞRAFYAMIZ</h2>
                         <p class="paragraf" id="yazi3">
                             İl alanı doğal açıdan kuzey ve kuzeydoğudan Demirci Dağları ve uzantıları, doğudan Kula - Gördes - Uşak platoları, güneyden Bozdağ kütlesi, batıdan Spil Dağı, 
                             Yamanlar Dağı uzantıları, Menemen Boğazı ve Yunt Dağı'nın uzantılarıyla kuşatılmış durumdadır. İl topraklarının %54,3'ü dağlardan oluşmaktadır. Bunu %27,8 ile platolar ve %17,9 ile ovalar 
@@ -113,11 +114,9 @@
                             Ancak bunların aşamaları birbirlerini düzenli bir biçimde izlemez. Dağlarda egemen bitki örtüsü ormanlar ve makilerdir. <br>
                         </p>
                     </div>
-                    <div class="col-lg-2">
 
-                    </div>
                     <div  class="col-lg-5 divAlani" id="tarihK" onmouseover ="ac('4')" onmouseout="kapat('4')">
-                        <h1 id="tarihB">TARİHİMİZ</h1>
+                        <h2 id="tarihB">TARİHİMİZ</h2>
                         <p class="paragraf" id="yazi4">
                             Bölge M.Ö. 1450-1200 yıllarında Hititlerin etkisinde kalmıştır. 
                             M.Ö. 1200’lerde ise Lidyalılar gelmiş ve Kızılırmak’a kadar bütün Batı Anadolu’ya egemen olmuşlardır.
@@ -146,11 +145,11 @@
         <footer class="bg-dark py-5 align-bottom">
             <div class="container text-white">
                 <div class="row">
-                    <div class="col-md-4"><a class="footer-logo" href="hakkinda.html">İbrahim Atıf KURU</a>
+                    <div class="col-md-4"><a class="footer-logo" href="index.html">İbrahim Atıf KURU</a>
                     </div>
                     <div class="col-md-4">
                         <ul >
-                            <li ><a class="footer-text" href="hakkinda.html">Hakkında</a></li>
+                            <li ><a class="footer-text" href="index.html">Hakkımda</a></li>
                             <li ><a class="footer-text" href="ozgecmis.html">Özgeçmiş</a></li>
                             <li ><a class="footer-text" href="sehrim.html">Şehrim</a></li>
                             <li ><a class="footer-text" href="mirasimiz.html">Mirasımız</a></li>

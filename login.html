@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="hakkinda.html">Anasayfa</a>
+                        <a class="nav-link" href="index.html">Hakkımda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
@@ -43,38 +43,32 @@
                 </ul>
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="sr-only" >(current)</span>Giriş  <img src="image/GirisYapmamis.png" width="30px" alt=""></a>
+                        <a class="nav-link" href="login.html"><span class="sr-only" >(current)</span>Giriş  <img src="image/GirisYapmamis.png" width="30px" alt=""></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p>
-                            
-                    </p>
+        <form id="form" action="kontrol.php" method="POST"> 
+            <div class="container-fluid login-container">
+                <div class="row login-row">
                 </div>
-                <div class="col-md-4">
-                    <p>
-                               
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                               
-                    </p>
+                <div class="row login-row">
+                    <div class="col-md-5 login-div">
+                        <input class="login-input" type="text" name="kullaniciadi" id="kullaniciadi" placeholder="Kullanıcı Adı...">
+                        <input class="login-input" type="password" name="sifre" id="sifre" placeholder="Şifre...">
+                        <button class="login-input" id="gonder" type="submit">GÖNDER</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
         <footer class="bg-dark py-5 align-bottom">
             <div class="container text-white">
                 <div class="row">
-                    <div class="col-md-4"><a class="footer-logo" href="hakkinda.html">İbrahim Atıf KURU</a>
+                    <div class="col-md-4"><a class="footer-logo" href="index.html">İbrahim Atıf KURU</a>
                     </div>
                     <div class="col-md-4">
                         <ul >
-                            <li ><a class="footer-text" href="hakkinda.html">Hakkında</a></li>
+                            <li ><a class="footer-text" href="index.html">Hakkımda</a></li>
                             <li ><a class="footer-text" href="ozgecmis.html">Özgeçmiş</a></li>
                             <li ><a class="footer-text" href="sehrim.html">Şehrim</a></li>
                             <li ><a class="footer-text" href="mirasimiz.html">Mirasımız</a></li>
@@ -92,6 +86,9 @@
                 </div>
             </div>
         </footer>
-      </body>
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/giris.js"></script>
     </body>
 </html>
